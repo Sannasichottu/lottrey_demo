@@ -5,7 +5,7 @@
   --primary-color: rgb(161, 255, 0);
   --secondary-color: rgb(76, 41, 126);
   --secondary-alt-color: rgb(66, 45, 122);
-  --para-color: rgba(255, 255, 255, 0.8);
+  --para-color: #140836;
   --para-alt-color: rgb(6, 4, 23);
   --section-color: rgb(27, 12, 67);
 }
@@ -20,7 +20,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
   font-size: 18px;
   line-height: 30px;
   padding: 0;
@@ -307,7 +307,7 @@ label {
 }
 
 .sub-title {
-  color: var(--primary-color);
+  color: var(--body-color);
   font-weight: 500;
   margin-bottom: 27px;
 }
@@ -1011,6 +1011,7 @@ label {
 }
 .header-section .navbar .navbar-collapse .right-area .login {
   color: var(--bs-white);
+  font-weight: 600;
 }
 .header-section .navbar .navbar-collapse .right-area button {
   background-color: transparent;
@@ -3115,6 +3116,9 @@ label {
   .tournaments-heading .latest-winners .table-responsive table {
     width: 130%;
   }
+  .header-section .navbar .navbar-collapse .right-area .login {
+    color:#fff;
+}
 }
 @media (max-width: 480px) {
   .banner-section.index .overlay {
@@ -3198,6 +3202,7 @@ label {
   .promotions .single-box .icon-box img {
     width: 110px;
   }
+  
   .tournaments-heading .heading-content {
     margin-top: -40px;
   }
@@ -3217,6 +3222,9 @@ label {
   .tournaments-heading .latest-winners .table-responsive table {
     width: 140%;
   }
+  .header-section .navbar .navbar-collapse .right-area .login {
+    color:#fff;
+}
 }
 @media (max-width: 375px) {
   .blog-post .col-10,
@@ -3265,6 +3273,9 @@ label {
   .log-reg .modal-content .btn-area .cmn-btn {
     width: 100%;
   }
+  .header-section .navbar .navbar-collapse .right-area .login {
+    color:#fff;
+}
 }
 
 
@@ -3313,7 +3324,7 @@ label {
     /* flex-wrap: wrap; */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.2); */
 }
 .lottery-card {
     background: linear-gradient(to bottom, #ffc107, #ff9800);
@@ -3335,6 +3346,9 @@ label {
     padding: 3px 6px;
     border-radius: 5px;
     font-weight: bold;
+}
+#lottery1 img {
+  width: 150px; height: 50px;
 }
 .win-prize {
     font-size: 16px;
@@ -3375,15 +3389,25 @@ label {
 }
 @media (max-width: 600px) {
     .lottery-container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
+    
+#lottery1 img {
+  width: 100px; 
+  height: 50px;
+  margin-left: 30px;
+}
+.play-button {
+  margin-top: 12px;
+}
 }
 
 
 /* winning list */
 .table tbody tr td .icon-box span {
   margin-right: 25px;
+  color: #fff;
 }
 
 /* payment card */
@@ -3396,7 +3420,7 @@ label {
   font-weight: bold;
   margin: 20px 0;
   text-align: left;
-  color: #fff;
+  color: var(--body-color);
 }
 .pay-grid {
   display: grid;

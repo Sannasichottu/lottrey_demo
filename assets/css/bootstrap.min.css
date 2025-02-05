@@ -10,7 +10,7 @@
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
+  --bs-white: #140836;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-primary: #0d6efd;
@@ -1763,7 +1763,7 @@ progress {
   border-color: #373b3e;
 }
 .table-responsive {
-  overflow-x: auto;
+  /* overflow-x: auto; */
   -webkit-overflow-scrolling: touch;
 }
 @media (max-width: 575.98px) {
