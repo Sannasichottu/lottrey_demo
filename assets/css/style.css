@@ -442,7 +442,7 @@ label {
   right: 30px;
   width: 45px;
   height: 45px;
-  background-color: var(--primary-color);
+  background-color: var(--body-color);
   border-radius: 5px;
   color: var(--bs-white);
   line-height: 45px;
@@ -454,7 +454,7 @@ label {
   transform: translateY(100%);
 }
 .scrollToTop i {
-  color: var(--para-alt-color);
+  color: #fff;
 }
 .scrollToTop.active {
   bottom: 30px;
@@ -3421,6 +3421,7 @@ label {
   margin: 20px 0;
   text-align: left;
   color: var(--body-color);
+  margin-left: 5px;
 }
 .pay-grid {
   display: grid;
